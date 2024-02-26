@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx-app
-        image: longlc3/nginx:v1.0.0
+        image: longlc3/nginx:v1.0.0 # {"$imagepolicy": "flux-system:nginx"}
         ports:
         - name: http
           containerPort: 80
