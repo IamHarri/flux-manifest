@@ -2,7 +2,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
   name: nginx
-  namespace: flux-system
+  # namespace: flux-system
 spec:
   interval: 30m
   sourceRef:
@@ -20,5 +20,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./clusters/local
+    path: ./clusters/base/nginx
     strategy: Setters
