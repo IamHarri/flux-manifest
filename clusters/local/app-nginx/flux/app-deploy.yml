@@ -9,7 +9,7 @@ spec:
     kind: GitRepository
     name: my-app
   path: "./deploy/"
-  interval: 3m
-  timeout: 5m
+  interval: 1m
+  timeout: 2m
   prune: true
   wait: true
